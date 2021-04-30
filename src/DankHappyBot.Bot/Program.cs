@@ -1,4 +1,4 @@
-﻿using DankHappyBot.Bot.Extension;
+using DankHappyBot.Bot.Extension;
 using DankHappyBot.Service.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -15,6 +15,8 @@ namespace DankHappyBot.Bot
                 .ConfigureServices(services =>
                 {
                     services.AddHostedService<IrcHostedService>();
+                    services.AddConfiguration<IrcOptions>()
+                        .AddConfiguration<TwitchApiOptions>();
                 })
                 .ConfigureLogging(builder =>
                 {
