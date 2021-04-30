@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DankHappyBot.Bot", "src\DankHappyBot.Bot\DankHappyBot.Bot.csproj", "{5F5A3DDA-1586-46FB-84CE-0897F79FC811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DankHappyBot.Service", "src\DankHappyBot.Service\DankHappyBot.Service.csproj", "{897895D6-7C20-4D2B-A32A-B0726DBA2ECA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{313912E7-EB7D-41B4-BABE-C7DAB1628AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DankHappyBot.Common", "src\DankHappyBot.Common\DankHappyBot.Common.csproj", "{36807DF1-0175-46BF-8081-3EDF5BF66742}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBBAF7EF-66C6-4734-B7FB-A16F1AD84187}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	README.md = README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E035727F-DB3F-468E-AACF-32CB357DB556}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F5A3DDA-1586-46FB-84CE-0897F79FC811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5A3DDA-1586-46FB-84CE-0897F79FC811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5A3DDA-1586-46FB-84CE-0897F79FC811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5A3DDA-1586-46FB-84CE-0897F79FC811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897895D6-7C20-4D2B-A32A-B0726DBA2ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897895D6-7C20-4D2B-A32A-B0726DBA2ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897895D6-7C20-4D2B-A32A-B0726DBA2ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897895D6-7C20-4D2B-A32A-B0726DBA2ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36807DF1-0175-46BF-8081-3EDF5BF66742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36807DF1-0175-46BF-8081-3EDF5BF66742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36807DF1-0175-46BF-8081-3EDF5BF66742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36807DF1-0175-46BF-8081-3EDF5BF66742}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{897895D6-7C20-4D2B-A32A-B0726DBA2ECA} = {313912E7-EB7D-41B4-BABE-C7DAB1628AC8}
+		{36807DF1-0175-46BF-8081-3EDF5BF66742} = {313912E7-EB7D-41B4-BABE-C7DAB1628AC8}
+		{5F5A3DDA-1586-46FB-84CE-0897F79FC811} = {E035727F-DB3F-468E-AACF-32CB357DB556}
+		{313912E7-EB7D-41B4-BABE-C7DAB1628AC8} = {E035727F-DB3F-468E-AACF-32CB357DB556}
+	EndGlobalSection
+EndGlobal

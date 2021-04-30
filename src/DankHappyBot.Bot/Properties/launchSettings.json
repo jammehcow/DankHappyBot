@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "DankHappyBot.Bot": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_TwitchApi__ClientId": "insert_id_here",
+        "DOTNET_TwitchApi__ClientSecret": "insert_secret_here",
+        "DOTNET_Irc__Credentials__OAuthToken": "insert_oauth_token_here"
+      }
+    }
+  }
+}
