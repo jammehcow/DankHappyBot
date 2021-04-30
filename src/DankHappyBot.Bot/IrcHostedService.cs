@@ -1,6 +1,6 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
+using DankHappyBot.Service.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -10,9 +10,12 @@ namespace DankHappyBot.Bot
     {
         private readonly ILogger<IrcHostedService> _logger;
 
-        public IrcHostedService(ILogger<IrcHostedService> logger)
+        private readonly IrcOptions _ircOptions;
+
+        public IrcHostedService(ILogger<IrcHostedService> logger, IrcOptions ircOptions)
         {
             _logger = logger;
+            _ircOptions = ircOptions;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
