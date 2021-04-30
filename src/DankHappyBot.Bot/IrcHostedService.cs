@@ -3,12 +3,13 @@ using System.Threading.Tasks;
 using DankHappyBot.Service.Configuration;
 using GravyIrc;
 using GravyIrc.Connection;
+using GravyIrc.Messages;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace DankHappyBot.Bot
 {
-    public class IrcHostedService : BackgroundService
+    public partial class IrcHostedService : BackgroundService
     {
         private readonly ILogger<IrcHostedService> _logger;
 
@@ -31,6 +32,7 @@ namespace DankHappyBot.Bot
             // TODO: move TcpClientConnection to factory
             IrcClient = new IrcClient(ircUser, _ircOptions.Credentials.OAuthToken, new TcpClientConnection());
 
+            IrcClient.EventHub.Subscribe<PrivateMessage>(async (_, pm) => await OnPrivateMessageReceived(pm));
             await IrcClient.ConnectAsync(_ircOptions.Connection.Address, _ircOptions.Connection.Port);
 
             // Wait until cancelled
